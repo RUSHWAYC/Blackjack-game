@@ -3,6 +3,7 @@ let hasBlackjack = false
 let cards = document.getElementById("cards")
 let cardsSum = document.getElementById("cardsSum")
 let newCardBtn = document.getElementById("newCard")
+let newGameBtn = document.getElementById("startGame")
 let drawnCards = []
 let sum
 let dealer = document.getElementById("dealer")
@@ -23,7 +24,9 @@ function drawRandomCard() {
 function startGame() {
     if (gameStarted === false) {
         gameStarted = true
+        hasBlackjack = false
         newCardBtn.style.removeProperty("display")
+        newGameBtn.style.display="none"
         cardOne = drawRandomCard()
         cardTwo = drawRandomCard()
         drawnCards = [cardOne, cardTwo]
@@ -51,10 +54,12 @@ function renderGame() {
         hasBlackjack = true
         gameStarted = false
         newCardBtn.style.display="none"
+        newGameBtn.style.removeProperty("display")
     } else {
         dealerText = "Tough luck, you lost."
         gameStarted = false
         newCardBtn.style.display="none"
+        newGameBtn.style.removeProperty("display")
     }
 
     dealer.textContent = dealerText

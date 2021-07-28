@@ -1,0 +1,41 @@
+body {
+    background-image: url(tablebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game {
+    background-image: url(gamebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 550px;
+    margin: 5vh auto 0 auto;
+    box-shadow: 0 0 20px 10px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 5vh;
+    color: gold;
+    font-size: 60px;
+    -webkit-text-stroke: 4px black;
+    font-family: sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px black;
+    font-family: sans-serif;
+}
+
+button {
+    background-color: DarkGreen;
+    border: 2px solid gold;
+    border-radius: 5px;
+    color: white;
+    width: 250px;
+    font-size: 30px;
+    margin-bottom: 3vh;
+}
